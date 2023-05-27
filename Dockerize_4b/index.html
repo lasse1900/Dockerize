@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSV File Writer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>CSV File Writer</h1>
+
+    <form action="/write_file1" method="post">
+        <label for="file1-data">Data for File 1:</label>
+        <input type="text" id="file1-data" name="data">
+        <button type="submit">Write File 1</button>
+    </form>
+
+    <form action="/write_file2" method="post">
+        <label for="file2-data">Data for File 2:</label>
+        <input type="text" id="file2-data" name="data">
+        <button type="submit">Write File 2</button>
+    </form>
+</body>
+</html>

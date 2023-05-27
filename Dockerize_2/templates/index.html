@@ -1,0 +1,18 @@
+<html>
+<body>
+    <h1>Flask App</h1>
+    <button onclick="startMethod()">Start Method</button>
+    <p id="result"></p>
+
+    <script>
+        function startMethod() {
+            fetch('/start_method')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById("result").innerText = data.result;
+                })
+                .catch(error => console.error(error));
+        }
+    </script>
+</body>
+</html>
